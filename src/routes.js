@@ -8,22 +8,21 @@ const routes = [
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />
-  }, 
+    errorElement: <ErrorPage />,
+    children: [
   {
     path: "/about",
     element: <About />,
-    errorElement: <ErrorPage />
   },
   {
     path: "/login",
-    element: <Login />,
-    errorElement: <ErrorPage />
+    element: <Login />,   
   },
   {
     path: "/profile/:id",
     element: <UserProfile />,
-    errorElement: <ErrorPage />
+  }
+]
   }
 ];
 
